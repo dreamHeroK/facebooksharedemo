@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta property="og:url" content="	http://cdo-activity-front-dev.wanyol.com/front/kangxuanxin/facebookDemo/index.html" />
+    <meta property="og:title" content="heyfun" />
+    <meta property="og:image" content="http://cdo-test-store.s3v2-qos.storage.wanyol.com/openplat/appdomain/202101/21/254be568f20c50da9392099389762134.jpg" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>HeyFun</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .loadingWrap {
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        position: fixed;
+        z-index: 99;
+      }
+
+      .loadingWrap .loading {
+        z-index: 99;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 24px;
+        height: 24px;
+        animation-name: circle;
+        animation-duration: 700ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      @keyframes circle {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <script src="https://static-common.heytapdownload.com/night_3_0.js"></script>
+  </head>
+
+  <body>
+    <noscript>
+      <strong>Please enable JavaScript support！</strong>
+    </noscript>
+    <img src="http://cdo-test-store.s3v2-qos.storage.wanyol.com/openplat/appdomain/202101/21/254be568f20c50da9392099389762134.jpg" />
+    <!-- <script>
+      let img = document.createElement('img')
+      img.src = 'http://cdo-test-store.s3v2-qos.storage.wanyol.com/openplat/appdomain/202101/21/254be568f20c50da9392099389762134.jpg'
+      document.body.appendChild(img)
+      addMeta('og:image', img.src)
+      let addMeta = (property, content) => {
+        //手动添加mate标签
+        console.log('init')
+        let meta = document.createElement('meta')
+        meta.setAttribute('property', property)
+        meta.content = content
+        document.getElementsByTagName('head')[0].appendChild(meta)
+      }
+    </script> -->
+  </body>
+</html>
